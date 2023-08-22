@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Odometer</title>
+</head>
+<body>
+<!DOCTYPE html>
+            <html>
+              <head>
+                <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+              </head>
+              <body>
+                <h1>Odometer</h1>
+                <form method="post" action="odometer">
+                  <label for="digit">Enter a digit for odometer reading</label>
+                  <input type="number" id="digit" name="digit">
+                  <input type="submit" name="action" value="Next Reading">
+                  <input type="submit" name="action" value="Prev Reading">
+		  		  <input type="number" name="k" placeholder="Enter K" min="1">
+                  <input type="submit" name="action" value="Next Kth Reading">
+                  <input type="submit" name="action" value="Prev Kth Reading">
+                </form>
+				<h2>Odometer Reading:</h2>
+				<p><span th:text="${reading}">12345</span></p>
+              </body>
+            </html>
+</body>
+</html>

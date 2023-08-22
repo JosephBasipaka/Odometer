@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<servlet>
+    <description></description>
+    <display-name>FibonacciServlet</display-name>
+    <servlet-name>FibonacciServlet</servlet-name>
+    <servlet-class>com.learning.hello.FibonacciServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FibonacciServlet</servlet-name>
+    <url-pattern>/fibonacci</url-pattern>
+    </servlet-mapping>
+<servlet>
+    <description></description>
+    <display-name>Passwords</display-name>
+    <servlet-name>Passwords</servlet-name>
+    <servlet-class>com.learning.hello.Passwords</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Passwords</servlet-name>
+    <url-pattern>/passwords</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <description></description>
+    <display-name>PasswordCheckServlet</display-name>
+    <servlet-name>PasswordCheckServlet</servlet-name>
+    <servlet-class>com.learning.hello.PasswordCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PasswordCheckServlet</servlet-name>
+    <url-pattern>/Passwords</url-pattern>
+  </servlet-mapping>
+
+</web-app>
